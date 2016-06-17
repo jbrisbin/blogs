@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: 'http://23.253.246.177:8081',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -31,7 +31,7 @@ config = {
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blog's published URL.
-        url: 'http://localhost:2368',
+        url: 'http://jbrisbin.com',
 
         // Example mail config
         // Visit http://support.ghost.org/mail for instructions
@@ -53,7 +53,7 @@ config = {
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(process.env.GHOST_CONTENT, '/data/ghost-dev.db')
+                filename: path.join(process.env.GHOST_CONTENT, '/data/ghost.db')
             },
             debug: false
         },
